@@ -1,0 +1,20 @@
+<div
+  class="traffic-light flex items-center justify-center bg-gray-800 rounded-lg"
+  [ngClass]="{
+      'first': lightIndex === 0,
+      'second': lightIndex === 1,
+      'third': lightIndex === 2,
+      'fourth': lightIndex === 3,
+  }"
+>
+  <div
+    class="flex h-20 items-center justify-center rounded-full text-3xl text-center text-white w-20 font-bold"
+    [ngClass]="{
+      'bg-red-600': currentColor === 'red',
+      'bg-yellow-500': currentColor === 'yellow',
+      'bg-green-500': currentColor === 'green'
+    }"
+  >
+    {{ currentColor === "red" ? durationCounter.red : currentColor === "yellow" ? '': durationCounter.green }}
+  </div>
+</div>

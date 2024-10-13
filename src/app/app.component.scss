@@ -1,0 +1,10 @@
+.controls {
+  button {
+    margin-left: 10px;
+  }
+}
+.lights-container{
+  height: calc(100% - 80px);
+  transition: all ease 1s;
+  position: relative;
+}
