@@ -60,8 +60,7 @@ berneo_task/
 1. Clone the repository or download the zip file.
 2. Run npm install to install all dependencies (ensure Node.js is installed on your system).
 3. Start the development server using ng serve. Then, navigate to http://localhost:4200/. The simulation will automatically start with the green light set to the default seconds.
-
-<!-- TODO add the logic explaination -->
+4. 
 ## Logical Explaination
 
 ### Key Concepts:
@@ -73,13 +72,13 @@ berneo_task/
 So the code is divided into 2 sections.
 
 ### Section 1:
-1. startCycle():
-    - It initializes the cycle by setting the green light's duration (this.durations.green) and starts the light cycle by calling cycleLights().
+1. `startCycle()`:
+    - It initializes the cycle by setting the green light's duration (this.durations.green) and starts the light cycle by calling `cycleLights()`.
 
 2. cycleLights():
     - It converts the green and yellow durations to milliseconds.
-    - A timer (setTimeout) is started for the green light, and when the green light duration is over, it triggers another timer for the yellow light.
-    - After the yellow light timer finishes, the active light is updated (cycled to the next light). This repeats in a loop by calling cycleLights() again, thus ensuring continuous cycling.
+    - A timer (`setTimeout`) is started for the green light, and when the green light duration is over, it triggers another timer for the yellow light.
+    - After the yellow light timer finishes, the active light is updated (cycled to the next light). This repeats in a loop by calling `cycleLights()` again, thus ensuring continuous cycling.
 
 3. updateGreenDuration(duration: number):
     - This function allows updating the green light duration dynamically.
