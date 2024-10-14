@@ -59,8 +59,8 @@ berneo_task/
 ```
 ## Instructions to Run
 1. Clone the repository or download the zip file.
-2. Run npm install to install all dependencies (ensure Node.js is installed on your system).
-3. Start the development server using `ng serve`. Then, navigate to http://localhost:4200/. The simulation will automatically start with the green light set to the default seconds.
+2. Run `npm install` to install all dependencies (ensure Node.js is installed on your system).
+3. Start the development server using `ng serve`. Then, navigate to http://localhost:4200/. The simulation will automatically start with the green light set to the default 5 seconds.
    
 ## Logical Explaination
 
