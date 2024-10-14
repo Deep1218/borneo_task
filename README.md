@@ -62,7 +62,7 @@ berneo_task/
 2. Run `npm install` to install all dependencies (ensure Node.js is installed on your system).
 3. Start the development server using `ng serve`. Then, navigate to http://localhost:4200/. The simulation will automatically start with the green light set to the default 5 seconds.
    
-## Logical Explaination
+## Logic Explaination
 
 ### Key Concepts:
 - Traffic Lights: The system has multiple lights (green, yellow, red), and the lights will cycle through these states based on a timer.
